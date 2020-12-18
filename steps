@@ -1,0 +1,20 @@
+composer create-project laravel/laravel example-app
+php artisan migrate
+
+Add in AppServiceProvicder
+use Illuminate\Support\Facades\Schema;
+
+Schema::defaultStringLength(191);
+
+
+composer require laravel/ui
+php artisan ui vue --auth
+php artisan migrate
+
+
+npm install
+npm cache clean --force - in case of error in NPM  install
+
+npm run dev
+
+
